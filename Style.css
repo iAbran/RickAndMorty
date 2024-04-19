@@ -4,32 +4,45 @@ nav{
     font-size:large;
     margin: -20px;
     text-align: center;
+    width: 100%;
+    position: sticky;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    
+    
+   
 
 }
 
 .head{
-    margin-top: 50px;
+    margin-top: 7rem;
     justify-content: center;
     text-align: center;
 }
 
 .container img {
     border-radius: 15%;
+    
+}
+
+.container{
+    margin-top: 4rem;
 }
 
 .head-c{
     margin-top: 40px;
     font-size: larger;
     text-align: center;
+   
 }
 
 
 #personajes{
     margin-top: 25px;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     width: 100%;
-    height: 400px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -58,4 +71,32 @@ body{
     padding: 8px;
     border-radius: 5px ;
     background-color: whitesmoke;
+}
+
+.footer {
+    margin-top: 10rem; /* Margen superior */
+    background-color: black; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 120px 0; /* Espaciado interno (arriba y abajo) */
+    width: 100%; /* Ancho completo */
+    margin-left: 0; /* Margen izquierdo a cero */
+    margin-right: 0; /* Margen derecho a cero */
+}
+   
+
+
+.footer ul{
+  
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer p{
+   
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 4rem;
+    text-align: center;
 }
