@@ -10,10 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Mejoras como, sacar el nav del head, entrar el footer en el body,
-        bajar el script de ultimo asi carga el css de primero,
-        la estikeca <div class="container"> la cambie a section, 
-        mejoras en el espacio-->
     <header>
         <p>Rick and Morty</p>
     </header>
@@ -28,7 +24,7 @@
         <div class="characters">
             <div class="head-c">
                 <h2>Personajes</h2>
-                <button onclick="LLenarDivs()" class="btn">Cargar</button>
+                <button onclick="LLenarDivs()" class="cargar-btn">Cargar</button>
             </div>
             <div id="personajes"></div>
         </div>
@@ -37,10 +33,10 @@
     <footer class="footer">
         <ul>
             <li>Open Source</li>
+            <li>-</li>
             <li>Alura</li>
-            <li>Republica Dominicana</li>
         </ul>       
-        <p>Copyright 2024</p>
+        <p>&copy; Copyright 2024 - Republica Dominicana</p>
     </footer>
  
     <script src="app.js"></script>

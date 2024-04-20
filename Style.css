@@ -1,107 +1,119 @@
-/* Mejoras como: el body para que quitara el los espacios que tenia en los bordes,
-   quite el body{ 
-        font-family: "Baskervville", serif;
-        font-weight: 400;
-        font-style: normal;
-        }        
-    ya que no hacia nada,
-    y mejoras en los espacios*/
+/*
+se ordeno mas el css, 
+se añadio un background gradient,
+se mejoro el diseño del boton,
+se cambio la clase del boton,
+*/
 
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;   
+html {
+    box-sizing: border-box;/* arregla problemas relacionados al desbordamiento*/
 }
 
-header{
-    background-color: whitesmoke;
-    padding: 25px;
-    font-size:large;
-    font-weight: 400;
-    font-style: normal;
-    margin: -20px;
-    text-align: center;
-    width: 100%;
-    position: sticky;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-.head{
-    margin-top: 7rem;
-    justify-content: center;
-    text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(90deg, rgb(212, 0, 255), aqua);
+}
+
+header {
+  background-color: whitesmoke;
+  padding: 10px;
+  font-size: large;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+.head {
+  margin-top: 10rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+    margin-top: 4rem;
 }
 
 .container img {
-    border-radius: 15%;
-    
+  border-radius: 15%;
 }
 
-.container{
-    margin-top: 4rem;
-
+.head-c {
+  margin-top: 200px;
+  font-size: larger;
+  text-align: center;
 }
 
-.head-c{
-    margin-top: 40px;
-    font-size: larger;
-    text-align: center;
-   
+.head-c .cargar-btn{
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color:rgb(167, 242, 255);
+    background: rgba(0, 0, 0, 0.712);
+    transition: 0.2s;  
 }
 
-#personajes{
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-family: "Baskervville", serif;
-    
+.head-c .cargar-btn:hover{
+    transform: scale(1.2, 1.2);
 }
 
-#personajes div:hover{  
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
-    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+#personajes {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Baskervville", serif;
 }
 
-.head-c{
-    margin-top: 250px;
-}
-.head-c button {
-    padding: 8px;
-    border-radius: 5px ;
-    background-color: whitesmoke;
+#personajes div:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.footer {
+footer {
     margin-top: 10rem; /* Margen superior */
-    background-color: black; /* Color de fondo */
+    background-color: rgba(0, 0, 0, 0.822);
     color: white; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    padding: 120px 0; /* Espaciado interno (arriba y abajo) */
+    padding: 10px; /* Espaciado interno (arriba y abajo) */
     width: 100%; /* Ancho completo */
     margin-left: 0; /* Margen izquierdo a cero */
     margin-right: 0; /* Margen derecho a cero */
 }
    
-.footer ul{
-    list-style: none;
+footer ul{
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    gap: 0.5rem;   
 }
 
-footer p{
-   
+footer p{  
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 4rem;
+    margin-top: 2rem;
     text-align: center;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 740px) {
+    body{       
+    }   
 }
